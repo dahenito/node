@@ -1,0 +1,16 @@
+
+
+https://nodejs.org/en/download/prebuilt-binaries
+
+https://nodejs.org/dist/v20.15.1/node-v20.15.1-darwin-x64.tar.gz
+https://nodejs.org/dist/v20.15.1/node-v20.15.1-darwin-arm64.tar.gz
+
+https://nodejs.org/dist/v20.15.1/node-v20.15.1-linux-x64.tar.xz
+https://nodejs.org/dist/v20.15.1/node-v20.15.1-linux-arm64.tar.xz
+
+https://nodejs.org/dist/v20.15.1/node-v20.15.1-win-arm64.zip
+https://nodejs.org/dist/v20.15.1/node-v20.15.1-win-x64.zip
+
+https://nodejs.org/dist/v22.4.1/node-v22.4.1-linux-x64.tar.xz
+
+https://go.dev/doc/install/source#environment

@@ -1,0 +1,15 @@
+#
+services:
+  node:
+    image: dockerapp/node
+    privileged: true
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+      args:
+        - HOSTOS=darwin
+        - HOSTARCH=arm64
+        # - HOSTOS=windows
+        # - HOSTARCH=amd64
+        # - HOSTOS=linux
+        # - HOSTARCH=amd64

@@ -1,0 +1,31 @@
+#!/bin/bash
+
+set -euo pipefail
+
+echo "Installing node $VERSION..."
+
+#
+function setup_node() {
+	local binpath=$1
+	shift
+	for bin in "$@"; do
+		if [ ! -e "$DOCKER_APP_BASE/bin/$bin" ]; then
+			ln -s "$binpath/$bin" "$DOCKER_APP_BASE/bin/"
+		fi
+	done
+}
+
+case "$HOSTOS" in
+	"linux")
+		setup_node "$DOCKER_APP_PATH/bin" corepack node npm npx
+	;;
+	"darwin")
+		setup_node "$DOCKER_APP_PATH/bin" corepack node npm npx
+	;;
+	"windows")
+		setup_node "$DOCKER_APP_PATH" corepack node.exe npm npx
+	;;
+	*)
+		echo "Unsupported platform"
+		exit 1
+esac
